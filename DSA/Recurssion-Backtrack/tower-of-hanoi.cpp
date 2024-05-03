@@ -2,9 +2,6 @@
 
 using namespace std;
 
-#include <iostream>
-using namespace std;
-
 void towerofhanoi(int disks, int source, int destination, int auxiliary) {
 	if (disks == 1) {
 		cout << "Moving disk 1 from peg " << source << " to peg " << destination << endl;
