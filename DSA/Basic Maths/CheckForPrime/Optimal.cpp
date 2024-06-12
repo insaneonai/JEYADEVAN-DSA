@@ -10,7 +10,7 @@ int main() {
 	for (int i = 1; i <= sqrt(n); i++) {
 		if (n % i == 0) {
 			prime++;
-			if (i != n / i) {
+			if (i != n / i) { // not a perfect square.
 				prime++;
 			}
 		}

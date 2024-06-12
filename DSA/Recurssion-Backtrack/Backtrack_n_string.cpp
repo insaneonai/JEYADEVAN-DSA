@@ -6,7 +6,7 @@ int arra[5];
 
 void stringk(int n, int k) {
 	if (n < 1) {
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < n; i++) {
 			cout << arra[i];
 		}
 		cout << endl;

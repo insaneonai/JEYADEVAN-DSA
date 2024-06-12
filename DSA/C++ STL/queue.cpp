@@ -12,7 +12,7 @@ int main() {
 			demo_queue.push(i); // adds i to queue by creating a temorary queue;
 		}
 		else {
-			demo_queue.emplace(i);  // Reconstructs the demo_queue;
+			demo_queue.emplace(i);  // Reconstructs the demo_queue, Does inplace addition;
 		}
 	}
 	if (!demo_queue.empty()) {

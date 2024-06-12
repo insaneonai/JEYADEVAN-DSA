@@ -17,7 +17,7 @@ int main() {
 
 	// Minimum prioirty queue;
 
-	priority_queue<int, vector<int>, greater<int>> pqm;
+	priority_queue<int, vector<int>,greater<int>> pqm;
 	cout << endl << "Minimum Priority Queue: " << endl;
 	pqm.push(5);
 	pqm.push(7);

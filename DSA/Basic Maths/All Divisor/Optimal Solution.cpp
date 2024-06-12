@@ -9,7 +9,7 @@ int main() {
 	for (int i = 1; i <= r; i++) {
 		if (n % i == 0) {
 			count++;
-			if (i != n / i) {
+			if (i != n / i) { // not a perfect square.
 				count++;
 			}
 		}

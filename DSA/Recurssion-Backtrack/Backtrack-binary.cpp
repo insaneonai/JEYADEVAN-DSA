@@ -3,11 +3,11 @@
 using namespace std;
 
 int arra[5] = { 0 };
-
+const int N = 5;
 void binary(int n) {
 	if (n < 1) {
-		for (int i = 0; i < 5; i++) {
-			cout << arra[i];
+		for (int i = 0; i < N; i++) {
+			cout << arra[i] << " ";
 		}
 		cout << endl;
 	}

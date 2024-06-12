@@ -17,9 +17,4 @@
       <UniqueIdentifier>{9c3d819b-7c4b-4779-b0ce-299fc1708abd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Basic Maths\CheckForPrime\Optimal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
