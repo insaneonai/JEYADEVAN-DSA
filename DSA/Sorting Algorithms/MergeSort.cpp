@@ -4,9 +4,9 @@
 using namespace std;
 
 void Merge(int arr[], int low, int mid, int high) {
-	vector<int> temp;
+	vector<int> temp; // {3, 5, 77} // sorted
 
-	int left = low;
+	int left = low; // {l 77 m}, {3, 5, rh}  {3, 5,77}
 	int right = mid + 1;
 
 	while (left <= mid && right <= high) {
@@ -31,18 +31,18 @@ void Merge(int arr[], int low, int mid, int high) {
 	}
 
 	for (int i = low; i <= high; i++) {
-		arr[i] = temp[i - low];
+		arr[i] = temp[i - low]; 
 	}
 }
 
-void MergeSort(int arr[], int low, int high) {
-	if (low >= high) {
+void MergeSort(int arr[], int low, int high) {  // { 1,5,7,8,9,2,4,5,6 }, low = 0, N-1
+	if (low >= high) { // Base Condition
 		return;
 	}
-	int mid = (low + high) / 2;
+	int mid = (low + high) / 2;  // (0 + 8) // 2  4
 
-	MergeSort(arr, low, mid);
-	MergeSort(arr, mid + 1, high);
+	MergeSort(arr, low, mid);  ///  { 1,5,7,8,9,2,4,5,6 },  low =0, high = 4  {1,5,7,8,9}  // {1,5,7}  // {1,5} // 1,5
+	MergeSort(arr, mid + 1, high); /// { 1,5,7,8,9,2,4,5,6 } // {2,4,5,6 }  // {5,6} // {5,6}  // 5,6
 	Merge(arr, low, mid, high);
 }
 

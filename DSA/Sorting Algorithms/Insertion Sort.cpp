@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void InsertionSort(int arr[], int N) {
-	for (int i = 0; i < N; i++) {
-		int j = i;
+void InsertionSort(int arr[], int N) {  //{ 1,5,7,8,9,4,2 }, 7;
+	for (int i = 0; i < N; i++) {  // 0-6 // 1 // 2  /// 5  // 6
+		int j = i; // 1st =0; 2nd; 1 ... 6 // 1 // 2   /// 5  // { 1,2,4,5,7,8,9 }  // j=1;
 		while (j > 0 && arr[j - 1] > arr[j]) {
 			int temp = arr[j];
 			arr[j] = arr[j - 1];

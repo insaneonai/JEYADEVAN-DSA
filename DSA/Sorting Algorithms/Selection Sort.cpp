@@ -13,7 +13,7 @@ swap value at mini and i.
 void selectionSort(int arr[], int N) {
 	for (int i = 0; i < N - 1; i++) {
 		int mini = i;
-		for (int j = i; j <= N - 1; i++) {
+		for (int j = i; j <= N - 1; j++) {
 			if (arr[j] < arr[mini]) {
 				mini = j;
 			}
@@ -26,8 +26,8 @@ void selectionSort(int arr[], int N) {
 
 int main() {
 	int arr[] = { 1,5,7,8,9,45,6,5 };
-	const N = sizeof(arr) / sizeof(arr[0]);
-	selectionSort(arr, N)
+	const int N = sizeof(arr) / sizeof(arr[0]);
+	selectionSort(arr, N);
 	for (int i = 0; i < N; i++) {
 		cout << arr[i] << " ";
 	}
