@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void Merge(int arr[], int low, int mid, int high) {
+void Merge(char arr[], int low, int mid, int high) {
 	vector<int> temp;
 
 	int left = low;
@@ -35,7 +35,7 @@ void Merge(int arr[], int low, int mid, int high) {
 	}
 }
 
-void MergeTwoArray(int arr1[], int arr2[], int arr3[], int n1, int n2) {
+void MergeTwoArray(char arr1[], char arr2[], char arr3[], int n1, int n2) {
 
 	int i = 0; int j = 0; int k = 0;
 
@@ -67,7 +67,7 @@ void MergeTwoArray(int arr1[], int arr2[], int arr3[], int n1, int n2) {
 }
 
 
-void MergeSort(int arr[], int low, int high) {
+void MergeSort(char arr[], char low, char high) {
 	if (low >= high) {
 		return;
 	}
@@ -81,13 +81,13 @@ void MergeSort(int arr[], int low, int high) {
 
 
 int main() {
-	int arr1[] = { 1,7,8,9,787,5 };
-	int arr2[] = { 1,7,45 };
+	char arr1[] = { 'a', 'p', 'l', 'e'};
+	char arr2[] = { 'h', 'a', 'p', 'p'};
 
 	const int N1 = *(&arr1 + 1) - arr1;
 	const int N2 = *(&arr2 + 1) - arr2;
 
-	int *arr3 = new int[N1 + N2];
+	char *arr3 = new char[N1 + N2];
 
 	MergeSort(arr1, 0, N1-1);
 	MergeSort(arr2, 0, N2 - 1);
@@ -97,6 +97,5 @@ int main() {
 	for (int i = 0; i < N1 + N2; i++) {
 		cout << arr3[i] << " ";
 	}
-
 
 }

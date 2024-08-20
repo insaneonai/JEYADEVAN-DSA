@@ -7,21 +7,10 @@
 using namespace std;
 
 
-void BubbleSort(vector<pair<int, char>> v, int n) {
-
-    for (int i = n - 1; n >= 0; i++) {
-        for (int j = 0; j < i; j++) {
-            if (v[j].first < v[j + 1].first) {
-                swap(v[j], v[j+1])
-            }
-        }
-    }
-}
-
 
 string sortByFrequency(string str) {
-    map<char, int> frequencyMap; // {'h': 1, 'e': 1, 'l': 2, 'o': 1};   // char arr[] , int arr[]
-    for (char c : str)   // hello
+    unordered_map<char, int> frequencyMap; // {'h': 1, 'e': 1, 'l': 2, 'o': 1};   // char arr[] , int arr[]
+    for (char c : str){   // hello
         frequencyMap[c]++;
     }
 

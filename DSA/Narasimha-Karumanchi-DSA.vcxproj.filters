@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CollegeDSA\Week-4\Medium\Check Parantheses.cpp">
+    <ClCompile Include="Stack-Application\infix2postfix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
