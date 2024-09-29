@@ -16,7 +16,7 @@ Time Complexity avg and worst case O(n^2), best case O(N)
 void BubbleSort(int arr[], int N) {
 	for (int i = N - 1; i >= 0; i--) {
 		int swap = 0;
-		for (int j = 0; j <= i; j++) {
+		for (int j = 1; j <= i; j++) {
 			if (arr[j - 1] > arr[j]){
 				int temp = arr[j];
 				arr[j] = arr[j - 1];

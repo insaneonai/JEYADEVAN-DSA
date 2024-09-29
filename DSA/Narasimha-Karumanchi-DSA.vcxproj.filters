@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack-Application\infix2postfix.cpp">
+    <ClCompile Include="Trees\BTrees\P3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
